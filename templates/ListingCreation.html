@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konnecta | Listing Creation</title>
+    <link rel="stylesheet" href="../static/Format.css">
+    <link rel="icon" href="../static/Konnecta favicon.png">
+</head>
+<body class="base">
+    <header class="toolbar">
+        <img src="../static/Konnecta icon.png" alt="" class="logo">
+        <a href="/" class="tbSections">Home</a>
+        <a href="/services" class="tbSections">Services</a>
+        <a href="/about" class="tbSections">How it Works</a>
+        <a href="/info" class="tbSections">About Us</a>
+        <a href="/creator_page" class="tbSectionO">For Providers</a>
+        <a href="" class="button">Log In</a>
+        <a href="" class="button2">Sign up</a>
+        <p></p>
+    </header>
+    <section class="dark-section">
+        <!-- enter some info and stuff -->
+    </section>
+    <main class="Notices">
+        <form action="/submit-offer" method="post">
+            <h1>Offer Submission</h1>
+            <section>
+            <!-- Contact Info -->
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+        </section>
+        <div class="spacer"></div>
+        <hr>
+        <section>
+            <!-- Type of Offer -->
+            <label for="offerType">Type of Offer:</label><br>
+            <select id="offerType" name="offerType"><br>
+                <option value="service">Service</option><br>
+                <option value="item">Item for Sale</option><br>
+                <option value="job">Job</option><br>
+            </select>
+</section>
+<div class="spacer"></div>
+<hr>
+<section>
+            <!-- Description -->
+             <label for="title">Label</label><br>
+             <input type="text" id="title" name="title"><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="5" placeholder="Describe your service or item..." required></textarea><br>
+</section>
+<div class="spacer"></div>
+<hr>
+<section>
+    <label for="image">Upload Image:</label>
+  <input type="file" id="image" name="image" accept="image/*">
+</section>
+<div class="spacer"></div>
+<hr>
+<section>
+            <!-- Price -->
+            <label for="price">Proposed Price (optional):</label><br>
+            <input type="number" id="price" name="price" placeholder="e.g. R100 or negotiable"><br>
+</section>
+<div class="spacer"></div>
+            <!-- Submit -->
+            <button type="submit">Send Offer</button>
+        </form>
+
+    </main>
+</body>
+</html>

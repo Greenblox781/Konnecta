@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>Konnecta | Home</title>
+<link rel="stylesheet" href="../static/Format.css" />
+<link rel="icon" type="image/png" href="../static/Konnecta favicon.png">
+</head>
+
+<body class="base">
+    <header class="toolbar">
+        <img src="../static/Konnecta icon.png" alt="" class="logo">
+        <a href="/" class="tbSections">Home</a>
+        <a href="/services" class="tbSectionO">Services</a>
+        <a href="/about" class="tbSections">How it Works</a>
+        <a href="/info" class="tbSections">About Us</a>
+        <a href="/creator_page" class="tbSections">For Providers</a>
+        <a href="" class="button">Log In</a>
+        <a href="" class="button2">Sign up</a>
+        <p></p>
+    </header>
+    
+<h1>Available Offers</h1>
+<div class="grid">
+    {% for offer in offers %}
+        <div class="offer-card">
+    {% if offer.image_filename %}
+        <img src="{{ url_for('static', filename='uploads/' + offer.image_filename) }}" alt="{{ offer.title }}" width="90%">
+    {% else %}
+        <img src="{{ url_for('static', filename='placeholder.png') }}" alt="{{ offer.title }}" width="90%">
+    {% endif %}
+      <h2>{{ offer.title }}</h2>
+      <p>{{ offer.description }}</p>
+      <p class="price">R{{ offer.price }}</p>
+      <a href="/offers/{{ offer.id }}">View Details</a>
+    </div>
+  {% endfor %}
+</div>
+  
+</body>
