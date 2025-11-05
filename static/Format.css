@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.base{
+    background-color: #36454F;
+    text-align: center;
+    font-family: sans-serif;
+}
+.logo{
+    z-index: 1000;
+    top: 5px;
+    left: 10px;
+    width: 50px;
+    border-radius: 50%;
+    border: #000000 solid 2px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 20px;
+  
+}
+.grid div{
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000055;
+  padding: 1.5rem;
+  background-color: #e9e7e4;
+}
+.grid div a{
+  text-decoration: none;
+  color: #5e00b6;
+  float: right;
+}
+.top{
+  /* add slight background gradient */
+  background: linear-gradient(-45deg, #a5b99c, #77ce4c);
+  /*background-color: #43FE31;*/
+  margin-top: 50px;
+  padding: 100px;
+}
+.top h1{
+  font-size: 70px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+.top .secondary{
+  font-size: 20px;
+  color: #ffffff77
+}
+.toolbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    background-color:  #2a2a2a;/*possible colours #1ABC9C, #C0C0C0, #2a2a2a, #343A40*/
+    border-bottom: 3px solid #111111;
+    align-items: center;      /* vertical centering */
+    justify-content:space-between;
+    display: flex;   
+}
+.blank{
+  box-shadow: none !important;
+  padding: none;
+  margin: none;
+  text-align: left;
+}
+.blank p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.25rem 0 0 0;
+}
+.blank b{
+font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  display: block;
+}
+.pfp{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: none !important;
+  padding: none !important;
+}
+.tbSections{
+    color: #C0C0C0;
+    top:50%;
+    float: left;
+    width: 150px;
+    min-width: fit-content;
+    border-radius: 3px;
+    text-align: center;
+    height: 90%;
+    display: flex;
+    align-items: center;      /* vertical centering */
+    justify-content: center;  /* horizontal centering */
+    text-decoration: none;
+    box-shadow: 1px 1px #1a1a1a;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px;
+    
+
+    
+}
+.tbSectionO{
+  background-color: #758EA2;
+  color: #F7F6F7;
+    top:50%;
+    float: left;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    height: 90%;
+    display: flex;
+    align-items: center;      /* vertical centering */
+    justify-content: center;  /* horizontal centering */
+    text-decoration: none;
+    box-shadow: 1px 1px #4A5966;
+}
+.tbSections:hover{
+   background-color: #444444; 
+   box-shadow:1px 1px #555555;}
+.offers{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    background-color:#C0C0C0;
+    color: #333333;
+    margin: 2.5%;
+    margin-top: 80px;
+    max-width: 500px;
+    transition: background-color 0.3s ease;
+    border: solid #a5b99c;}
+.offers:hover{
+    background-color:#A9A9A9;
+    color: #2f4f4f;
+    border: solid #f56552;}
+.roundsection{
+    padding: 50px;
+    background-color: /*beige*/#e9e7e4;
+    border-radius: 15px;
+    margin: 30px;
+    font-size: large;
+    font-family: 'Inter' sans-serif;}
+.offerImage{
+    max-width:  90%;
+    height: auto;}
+ol {
+  list-style-position: inside; /* brings numbers into the content box */
+  text-align: center;          /* centers the entire list block */}
+.heading{
+    font-size:  1.5em;
+    font-weight: bold;}
+.Notices{
+   padding: 20px;
+    text-align: center;
+    background-color:#e9e7e4;
+    width: 80%;
+    border:5px solid #a5b99c;
+    width: 80%; 
+    margin: 8% auto;
+    border-radius: 15px;}
+.button{
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: #778492;
+  color: #e9e7e4;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;}
+.button:hover { 
+  background-color:   #f56552;}
+.button2{
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: #a5b99c;
+  color: #e9e7e4;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;}
+.button2:hover { 
+  background-color:   #f56552;}
+.offer-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;}
+.centered-table {
+    margin: 0 auto; /* Horizontally centers the table */
+    border-collapse: collapse; /* Merges adjacent borders */
+    width: 80%; /* Optional: controls table width */}
+.centered-table th,
+.centered-table td {
+    border: 3px solid #333; /* Adds visible lines */
+    padding: 8px; /* Adds spacing inside cells */
+    text-align: center; /* Optional: centers text */}
+.Tablebutton {
+  display: block;              /* Makes it fill the cell horizontally */
+  width: 100%;                 /* Optional: fills the cell width */
+  padding: 5px 10px;
+  background-color: #778492;
+  color: #e9e7e4;
+  text-decoration: none;
+  border: none;
+  border-radius: 0px;
+  font-weight: bold;
+  text-align: center;          /* Centers the text inside the button */
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;      /* Ensures padding doesn’t overflow */}
+.Tablebutton:hover { 
+  background-color:   #5f6b76;}
+.tbSections a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;}
+dt{
+  font-weight: bold;
+  font-size: large;}
+.spacer{
+  height: 30px;}
+.dark-section{
+  padding: 50px;
+    color: beige;
+    border-radius: 15px;
+    margin: 30px;
+    font-size: large;
+    font-family: 'Inter' sans-serif;}
+  .dark-section a{
+    color: #a5b99c;
+  }
+  
+.nums{
+  font-size: larger;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #a5b99c; /* your brand color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #455e3a;
+  font-weight: bold;
+  margin: auto;}
+.list-wrap{
+  width: fit-content;
+  margin: auto;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #111111;
+  color: beige;
+  width: 100%;
+  max-width: 100vw;}
+footer a{
+  color: beige;
+  text-decoration: none;
+  bottom: 0;
+  left: 0;}
+* {
+  box-sizing: border-box;}
+footer section.spacer {
+  flex: 0 0 50px; /* fixed width spacer */
+  height: auto;}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;}
+
